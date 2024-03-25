@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-center {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ============================ Day 4 ============================ */
+:root {
+    --circle-animation: cubic-bezier(.3, .78, .17, 1);
+}
+
+.day4 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.day4 .center {
+    width: 400px;
+    height: 400px;
+    background-color: #ee776e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.center .circle-1 {
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: lingkaran1 2s var(--circle-animation) infinite alternate;
+    animation-fill-mode: both;
+}
+
+.center .circle-2 {
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: lingkaran2 2s var(--circle-animation) infinite alternate;
+    animation-fill-mode: both;
+}
+
+.center .circle-3 {
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: lingkaran3 2s var(--circle-animation) infinite alternate;
+    animation-fill-mode: both;
+}
+
+@keyframes lingkaran1 {
+    0% {
+        transform: scale(0);
+    }
+
+    30% {
+        transform: scale(0);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes lingkaran2 {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lingkaran3 {
+    0% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ============================ Day 5 ============================ */
+.day5 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.day5 .center {
+    width: 400px;
+    height: 400px;
+    background-color: #42A7A1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day5 .center .grapik {
+    width: 70%;
+    height: 55%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.day5 .center .grapik .grapik-header {
+    flex: 1;
+    width: 100%;
+    background-color: #F1BA64;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+
+.grapik-header .gh-right {
+    text-align: right;
+}
+
+.grapik-header .gh-right .text-top {
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.grapik-header .gh-right .text-bottom {
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.grapik-header .gh-left .text-top {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.grapik-header .gh-left .text-bottom {
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: lowercase;
+}
+
+.day5 .center .grapik .grapik-main {
+    flex: 4;
+}
+
+.grapik .gm-header {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 15px;
+    font-size: 11px;
+    padding: 10px;
+    color: #5f5f5f;
+}
+
+.gm-header .views {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.gm-header .purchase {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.gm-header .ind-views {
+    background-color: #ff4a4a;
+    width: 10px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.gm-header .ind-purchase {
+    background-color: #4249a7;
+    width: 10px;
+    height: 3px;
+    border-radius: 2px;
+}

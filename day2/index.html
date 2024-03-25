@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="tombol" class="menu-icon">
+            <div class="batang batang1 not-animation"></div>
+            <div class="batang batang2 not-animation"></div>
+            <div class="batang batang3 not-animation"></div>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="menu-icon-2">
+            <div class="batang batang-1 not-animasi"></div>
+            <div class="batang batang-2 not-animasi"></div>
+            <div class="batang batang-3 not-animasi"></div>
+        </div>
+    </div>
+</body>
+<script>
+
+    $('.menu-icon').bind('click', function () {
+        $(this).toggleClass('active');
+        $(this).find('div').toggleClass('not-animation');
+    });
+
+    $('.menu-icon-2').bind('click', function () {
+        $(this).toggleClass('active');
+        $(this).find('div').toggleClass('not-animasi');
+    });
+</script>
+
+</html>
