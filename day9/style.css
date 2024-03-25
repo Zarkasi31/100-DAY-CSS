@@ -53,9 +53,9 @@ body {
   overflow: hidden;
 }
 .container .center .pemandangan .lubang {
-  --size: 8px;
-  --top: 67%;
-  --left: 79%;
+  --size: 2px;
+  --top: 75%;
+  --left: 97%;
   border-radius: 50%;
   filter: brightness(90%);
   background: #ddc993;
@@ -66,39 +66,39 @@ body {
   left: var(--left);
 }
 .container .center .pemandangan .lbng-1 {
-  --size: 7px;
-  --top: 66%;
-  --left: 64%;
+  --size: 3px;
+  --top: 84%;
+  --left: 95%;
 }
 .container .center .pemandangan .lbng-2 {
-  --size: 9px;
-  --top: 39%;
-  --left: 68%;
+  --size: 3px;
+  --top: 86%;
+  --left: 71%;
 }
 .container .center .pemandangan .lbng-3 {
-  --size: 4px;
-  --top: 57%;
-  --left: 73%;
+  --size: 7px;
+  --top: 24%;
+  --left: 8%;
 }
 .container .center .pemandangan .lbng-4 {
-  --size: 5px;
-  --top: 85%;
-  --left: 57%;
+  --size: 6px;
+  --top: 18%;
+  --left: 42%;
 }
 .container .center .pemandangan .lbng-5 {
-  --size: 8px;
-  --top: 37%;
-  --left: 98%;
+  --size: 9px;
+  --top: 23%;
+  --left: 50%;
 }
 .container .center .pemandangan .lbng-6 {
-  --size: 6px;
-  --top: 37%;
-  --left: 26%;
+  --size: 7px;
+  --top: 33%;
+  --left: 94%;
 }
 .container .center .pemandangan .lbng-7 {
-  --size: 3px;
-  --top: 82%;
-  --left: 68%;
+  --size: 6px;
+  --top: 7%;
+  --left: 8%;
 }
 .container .center .pemandangan .gunung {
   position: absolute;
