@@ -139,11 +139,7 @@
             font-weight: 700;
             font-size: 21px;
         }
-    }
-    
-    
-    
-    
+    }   
     
 }
 
@@ -221,12 +217,51 @@
         background-color: red;
         transform: translateY(-100%);
         transition: all 1.2s ease;
+        // background-image: url('https://source.unsplash.com/brown-and-green-mountain-beside-blue-sea-under-blue-sky-during-daytime-c8jaJItyxKU');
+       overflow: hidden;
+        img{
+            width: 400px;
+            height: 200px;
+            object-fit:fill;
+        }
+        
     }
     .footer{
         flex: 1;
         background-color: #dfdfdf;
         transform: translateY(100%);
         transition: all 1.2s ease;
+        position: relative;
+        background-color: #EC6565;
+        .bot-footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #fff;
+            font-size: 30px;
+            padding: 50px;
+            .lingkaran{
+                border: 1px solid #fff;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                // background-color: #e77f71;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s ease;
+                &:hover{
+                    color:#EC6565;
+                    background-color: #fff;
+                    transition: all 0.5s ease;
+                }
+            }
+
+        }
 
     }
     .circle{
@@ -238,12 +273,15 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -300%);
-        border: 1px solid #4CB6DE;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         background: transparent;
-        // background-color: #333;
-        // transform: scale(0);
         transition: all 1.2s ease 0.3s;
-       background-image: url('face1.jpg');
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
     }
     .x{
         position: absolute;
@@ -259,10 +297,10 @@
         color: #fff;
         font-size: 25px;
         font-weight: 100;
-        transition: all 1.2s ease;
+        transition: all 0.5s ease;
         transform: translateY(-100%);
         &:hover{
-            color: #333;
+            color: #EC6565;
         }
         .kotak{
             transform: rotate(45deg);
@@ -271,7 +309,7 @@
        
     }
    }
-
+}
    .layar.muncul{
     // transform: translateY(0%);
     opacity: 1;
@@ -336,7 +374,7 @@
     position: relative;
     // z-index: 10;
     &:before{
-         background-image: url('face1.jpg');
+         background-image: url('foto1.jpg');
         //  background-repeat: no-repeat;
          position: absolute;
          content: '';
@@ -352,36 +390,20 @@
      
     }
 
-   .image-2{
-    // background-color: #333;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    // z-index: 10;
-    &:before{
-         background-image: url('face2.jpg');
-        //  background-repeat: no-repeat;
-         position: absolute;
-         content: '';
-        //  top: 50%;
-        //  left: 50%;
-        //  transform: translate(-50%, -50%);
-         z-index: 1000;
-         width: 200px;
-         height: 200px;
+   
 
-         // background-color: #333;
-         object-fit: contain;
-     
-    }
-   .image-3{
+   
+
+}
+
+.image-2{
     // background-color: #333;
     width: 200px;
     height: 200px;
     position: relative;
     // z-index: 10;
     &:before{
-         background-image: url('face1.jpg');
+         background-image: url('foto2.jpg');
         //  background-repeat: no-repeat;
          position: absolute;
          content: '';
@@ -396,14 +418,20 @@
          object-fit: contain;
      
     }
-   .image-4{
+
+   
+
+   
+
+}
+.image-3{
     // background-color: #333;
     width: 200px;
     height: 200px;
     position: relative;
     // z-index: 10;
     &:before{
-         background-image: url('face1.jpg');
+         background-image: url('foto3.jpg');
         //  background-repeat: no-repeat;
          position: absolute;
          content: '';
@@ -418,7 +446,36 @@
          object-fit: contain;
      
     }
-   }
+
+   
+
+   
+
+}
+.image-4{
+    // background-color: #333;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    // z-index: 10;
+    &:before{
+         background-image: url('foto4.jpg');
+        //  background-repeat: no-repeat;
+         position: absolute;
+         content: '';
+        //  top: 50%;
+        //  left: 50%;
+        //  transform: translate(-50%, -50%);
+         z-index: 10;
+         width: 200px;
+         height: 200px;
+
+         // background-color: #333;
+         object-fit: contain;
+     
+    }
+
+   
 
    
 
