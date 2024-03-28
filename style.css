@@ -171,23 +171,22 @@
   top: 0;
   left: 0;
   z-index: 200;
-  background-color: #433aa0;
   display: flex;
   flex-direction: column;
-  opacity: 1;
+  opacity: 0;
   transition: all 0.9s ease-in;
 }
 .card-13 .layar .header {
   flex: 1;
   background-color: red;
   transform: translateY(-100%);
-  transition: all 0.5s ease;
+  transition: all 1.2s ease;
 }
 .card-13 .layar .footer {
   flex: 1;
   background-color: #fff;
   transform: translateY(100%);
-  transition: all 0.5s ease;
+  transition: all 1.2s ease;
 }
 .card-13 .layar .circle {
   position: absolute;
@@ -197,23 +196,51 @@
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -300%);
   border: 1px solid #4CB6DE;
   background-color: #333;
-  transform: scale(0);
-  transition: all 0.5s ease;
+  transition: all 1.2s ease 0.3s;
+}
+.card-13 .layar .x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 100;
+  transition: all 1.2s ease;
+  transform: translateY(-100%);
+}
+.card-13 .layar .x:hover {
+  background-color: #333;
+}
+.card-13 .layar .x .kotak {
+  transform: rotate(45deg);
+}
+.card-13 .layar.muncul {
+  opacity: 1;
 }
 .card-13 .layar.muncul .header {
   transform: translateY(0%);
-  transition: all 0.5s ease;
+  transition: all 1.2s ease;
 }
 .card-13 .layar.muncul .footer {
   transform: translateY(0%);
-  transition: all 0.5s ease;
+  transition: all 1.2s ease;
 }
 .card-13 .layar.muncul .circle {
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 1s ease;
+  transform: translate(-50%, -50%);
+  transition: all 1.2s ease 0.1s;
+}
+.card-13 .layar.muncul .x {
+  transform: translateY(0%);
+  transition: all 1.2s ease;
 }
 .card-13 .image {
   width: 200px;
@@ -226,26 +253,24 @@
   position: relative;
   z-index: 201;
 }
+.card-13 .image:hover {
+  filter: brightness(0.5);
+  transition: all 1s ease;
+  background-color: #333;
+}
+.card-13 .image:hover .bx {
+  transform: scale(1.5);
+  opacity: 1;
+  transition: all 1s ease;
+}
 .card-13 .image .bx {
   z-index: 1000;
-}
-.card-13 .image .bx:hover {
-  color: green;
-  transition: all 0.5s ease-in;
-  transform: scale(1.2);
+  transform: scale(2.5);
+  opacity: 0;
+  transition: all 1s ease;
 }
 .card-13 .image-1 {
   width: 200px;
   height: 200px;
   position: relative;
-}
-.card-13 .image-1:before {
-  background-image: url("https://source.unsplash.com/a-view-of-the-earth-from-space-VVXk3N0ptFw");
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 200px;
-  height: 200px;
 }/*# sourceMappingURL=style.css.map */
