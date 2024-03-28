@@ -171,9 +171,9 @@
   top: 0;
   left: 0;
   z-index: 200;
+  background: transparent;
   display: flex;
   flex-direction: column;
-  opacity: 0;
   transition: all 0.9s ease-in;
 }
 .card-13 .layar .header {
@@ -184,7 +184,7 @@
 }
 .card-13 .layar .footer {
   flex: 1;
-  background-color: #fff;
+  background-color: #dfdfdf;
   transform: translateY(100%);
   transition: all 1.2s ease;
 }
@@ -210,7 +210,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: 500;
   color: #fff;
   font-size: 25px;
   font-weight: 100;
@@ -218,13 +218,14 @@
   transform: translateY(-100%);
 }
 .card-13 .layar .x:hover {
-  background-color: #333;
+  color: #333;
 }
 .card-13 .layar .x .kotak {
   transform: rotate(45deg);
 }
 .card-13 .layar.muncul {
   opacity: 1;
+  z-index: 205;
 }
 .card-13 .layar.muncul .header {
   transform: translateY(0%);
@@ -256,21 +257,30 @@
 .card-13 .image:hover {
   filter: brightness(0.5);
   transition: all 1s ease;
-  background-color: #333;
 }
 .card-13 .image:hover .bx {
   transform: scale(1.5);
   opacity: 1;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 .card-13 .image .bx {
   z-index: 1000;
-  transform: scale(2.5);
+  transform: scale(3.5);
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 .card-13 .image-1 {
   width: 200px;
   height: 200px;
   position: relative;
+}
+.card-13 .image-1:before {
+  background-image: url("face1.jpg");
+  position: absolute;
+  content: "";
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */

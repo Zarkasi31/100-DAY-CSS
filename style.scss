@@ -203,19 +203,19 @@
    position: relative;
 
    .layar{
-
     position: absolute;
-   width: 400px;
-   height: 400px;
-   top: 0;
-   left: 0;
- 
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    // display: none;
     z-index: 200;
-    // background-color: #433aa0;
+    background:transparent;
     display: flex;
     flex-direction: column;
-    opacity: 0;
+    // opacity: 0;
     transition: all 0.9s ease-in;
+    // transform: translateY(-200%);
     .header{
         flex: 1;
         background-color: red;
@@ -224,7 +224,7 @@
     }
     .footer{
         flex: 1;
-        background-color: #fff;
+        background-color: #dfdfdf;
         transform: translateY(100%);
         transition: all 1.2s ease;
 
@@ -239,9 +239,11 @@
         left: 50%;
         transform: translate(-50%, -300%);
         border: 1px solid #4CB6DE;
-        background-color: #333;
+        background: transparent;
+        // background-color: #333;
         // transform: scale(0);
         transition: all 1.2s ease 0.3s;
+       background-image: url('face1.jpg');
     }
     .x{
         position: absolute;
@@ -253,14 +255,14 @@
         align-items: center;
         justify-content: center;
         // opacity: 0;
-        z-index: 10000;
+        z-index: 500;
         color: #fff;
         font-size: 25px;
         font-weight: 100;
         transition: all 1.2s ease;
         transform: translateY(-100%);
         &:hover{
-            background-color: #333;
+            color: #333;
         }
         .kotak{
             transform: rotate(45deg);
@@ -271,7 +273,9 @@
    }
 
    .layar.muncul{
+    // transform: translateY(0%);
     opacity: 1;
+    z-index: 205;
     // transition: all 0.9s ease-in-out;
     .header{
         transform: translateY(0%);
@@ -308,41 +312,112 @@
     &:hover{
         filter: brightness(0.5);
         transition: all 1s ease;
-        background-color: #333;
+        // background-color: #333;
         .bx{
             transform: scale(1.5);
             opacity: 1;
-            transition: all 1s ease;
+            transition: all 0.5s ease;
         }
     }
 
     .bx{
         z-index: 1000;
-        transform: scale(2.5);
+        transform: scale(3.5);
         opacity: 0;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
     }
     // border-radius: 1px solid #fff;
    }
+
    .image-1{
     // background-color: #333;
     width: 200px;
     height: 200px;
     position: relative;
     // z-index: 10;
-    // &:before{
-    //      background-image: url('https://source.unsplash.com/a-view-of-the-earth-from-space-VVXk3N0ptFw');
-    //      position: absolute;
-    //      content: '';
-    //      top: 0;
-    //      left: 0;
-    //      z-index: 10;
-    //      width: 200px;
-    //      height: 200px;
-    //      // background-color: #333;
-    //      // object-fit: contain;
+    &:before{
+         background-image: url('face1.jpg');
+        //  background-repeat: no-repeat;
+         position: absolute;
+         content: '';
+        //  top: 50%;
+        //  left: 50%;
+        //  transform: translate(-50%, -50%);
+         z-index: 10;
+         width: 200px;
+         height: 200px;
+
+         // background-color: #333;
+         object-fit: contain;
      
-    // }
+    }
+
+   .image-2{
+    // background-color: #333;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    // z-index: 10;
+    &:before{
+         background-image: url('face2.jpg');
+        //  background-repeat: no-repeat;
+         position: absolute;
+         content: '';
+        //  top: 50%;
+        //  left: 50%;
+        //  transform: translate(-50%, -50%);
+         z-index: 1000;
+         width: 200px;
+         height: 200px;
+
+         // background-color: #333;
+         object-fit: contain;
+     
+    }
+   .image-3{
+    // background-color: #333;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    // z-index: 10;
+    &:before{
+         background-image: url('face1.jpg');
+        //  background-repeat: no-repeat;
+         position: absolute;
+         content: '';
+        //  top: 50%;
+        //  left: 50%;
+        //  transform: translate(-50%, -50%);
+         z-index: 10;
+         width: 200px;
+         height: 200px;
+
+         // background-color: #333;
+         object-fit: contain;
+     
+    }
+   .image-4{
+    // background-color: #333;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    // z-index: 10;
+    &:before{
+         background-image: url('face1.jpg');
+        //  background-repeat: no-repeat;
+         position: absolute;
+         content: '';
+        //  top: 50%;
+        //  left: 50%;
+        //  transform: translate(-50%, -50%);
+         z-index: 10;
+         width: 200px;
+         height: 200px;
+
+         // background-color: #333;
+         object-fit: contain;
+     
+    }
    }
 
    
