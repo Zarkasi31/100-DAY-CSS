@@ -266,29 +266,27 @@
 .card-13 .layar .x .kotak {
   transform: rotate(45deg);
 }
-
-.layar.muncul {
+.card-13 .layar.muncul {
   opacity: 1;
   z-index: 205;
 }
-.layar.muncul .header {
+.card-13 .layar.muncul .header {
   transform: translateY(0%);
   transition: all 1.2s ease;
 }
-.layar.muncul .footer {
+.card-13 .layar.muncul .footer {
   transform: translateY(0%);
   transition: all 1.2s ease;
 }
-.layar.muncul .circle {
+.card-13 .layar.muncul .circle {
   transform: translate(-50%, -50%);
   transition: all 1.2s ease 0.1s;
 }
-.layar.muncul .x {
+.card-13 .layar.muncul .x {
   transform: translateY(0%);
   transition: all 1.2s ease;
 }
-
-.image {
+.card-13 .image {
   width: 200px;
   height: 200px;
   display: flex;
@@ -299,28 +297,27 @@
   position: relative;
   z-index: 201;
 }
-.image:hover {
+.card-13 .image:hover {
   filter: brightness(0.5);
   transition: all 1s ease;
 }
-.image:hover .bx {
+.card-13 .image:hover .bx {
   transform: scale(1.5);
   opacity: 1;
   transition: all 0.5s ease;
 }
-.image .bx {
+.card-13 .image .bx {
   z-index: 1000;
   transform: scale(3.5);
   opacity: 0;
   transition: all 0.5s ease;
 }
-
-.image-1 {
+.card-13 .image-1 {
   width: 200px;
   height: 200px;
   position: relative;
 }
-.image-1:before {
+.card-13 .image-1:before {
   background-image: url("foto1.jpg");
   position: absolute;
   content: "";
@@ -330,13 +327,12 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-.image-2 {
+.card-13 .image-2 {
   width: 200px;
   height: 200px;
   position: relative;
 }
-.image-2:before {
+.card-13 .image-2:before {
   background-image: url("foto2.jpg");
   position: absolute;
   content: "";
@@ -346,13 +342,12 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-.image-3 {
+.card-13 .image-3 {
   width: 200px;
   height: 200px;
   position: relative;
 }
-.image-3:before {
+.card-13 .image-3:before {
   background-image: url("foto3.jpg");
   position: absolute;
   content: "";
@@ -362,13 +357,12 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-.image-4 {
+.card-13 .image-4 {
   width: 200px;
   height: 200px;
   position: relative;
 }
-.image-4:before {
+.card-13 .image-4:before {
   background-image: url("foto4.jpg");
   position: absolute;
   content: "";
@@ -377,4 +371,279 @@
   height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.card-14 {
+  background: #4B4841;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-14 .kartu {
+  background: transparent;
+  width: 300px;
+  height: 200px;
+  border-radius: 12px;
+  perspective: 800px;
+}
+.card-14 .kartu:hover .flip {
+  transform: rotateX(180deg) translate3d(0, 0, 0);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.card-14 .kartu .flip {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: all 2s ease-in-out;
+  border-radius: 12px;
+  perspective: 1000px;
+}
+.card-14 .kartu .flip .front, .card-14 .kartu .flip .back {
+  position: absolute;
+  background-color: #FFCE4E;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backface-visibility: hidden;
+  text-align: center;
+}
+.card-14 .kartu .flip .front {
+  transform: rotateX(0);
+  backface-visibility: hidden;
+  opacity: 1;
+}
+.card-14 .kartu .flip .front img {
+  position: relative;
+  top: 20px;
+  width: 110px;
+  height: 110px;
+  animation: sepeda 0.5s ease-in infinite;
+}
+.card-14 .kartu .flip .front .jalan {
+  position: absolute;
+  left: 75px;
+  bottom: 60px;
+  width: 150px;
+  height: 10px;
+}
+.card-14 .kartu .flip .front .jalan .garis-1 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 3px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 0.9s linear 0.1s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-2 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 4px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 1s linear 0.7s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-3 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 5px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 0.9s linear 0.1s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-4 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 6px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 1s linear 0.8s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-5 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 7px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 1s linear 0.9s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-6 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 8px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 1s linear 1s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-7 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 9px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 1s linear 0.6s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-8 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 10px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 0.9s linear 0.6s infinite;
+}
+.card-14 .kartu .flip .front .jalan .garis-9 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 3px;
+  width: 11px;
+  background: #4B4841;
+  border-radius: 3px;
+  animation: jalan 0.9s linear 0.9s infinite;
+}
+.card-14 .kartu .flip .back {
+  transform: rotateX(180deg);
+}
+.card-14 .kartu .flip .back img {
+  position: relative;
+  top: 40px;
+  width: 110px;
+  height: 110px;
+  animation: heli 0.8s ease-in infinite;
+}
+.card-14 .kartu .flip .back .awan {
+  position: absolute;
+  width: 180px;
+  top: 0;
+  left: 80px;
+  bottom: 0;
+}
+.card-14 .kartu .flip .back .awan .awan-1 {
+  position: absolute;
+  top: 34px;
+  right: 10px;
+  height: 3px;
+  width: 14.9px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.7s linear 1s infinite;
+}
+.card-14 .kartu .flip .back .awan .awan-2 {
+  position: absolute;
+  top: 48px;
+  right: 10px;
+  height: 3px;
+  width: 20.2px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.7s linear 0.1s infinite;
+}
+.card-14 .kartu .flip .back .awan .awan-3 {
+  position: absolute;
+  top: 62px;
+  right: 10px;
+  height: 3px;
+  width: 21.4px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.7s linear 0.3s infinite;
+}
+.card-14 .kartu .flip .back .awan .awan-4 {
+  position: absolute;
+  top: 76px;
+  right: 10px;
+  height: 3px;
+  width: 20.7px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.8s linear 0.3s infinite;
+}
+.card-14 .kartu .flip .back .awan .awan-5 {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  height: 3px;
+  width: 24.1px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.7s linear 0.5s infinite;
+}
+.card-14 .kartu .flip .back .awan .awan-6 {
+  position: absolute;
+  top: 104px;
+  right: 10px;
+  height: 3px;
+  width: 12.5px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.7s linear 0.4s infinite;
+}
+.card-14 .kartu .flip .back .awan .awan-7 {
+  position: absolute;
+  top: 118px;
+  right: 10px;
+  height: 3px;
+  width: 24.4px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.8s linear 0.2s infinite;
+}
+.card-14 .kartu .flip .back .awan .awan-8 {
+  position: absolute;
+  top: 132px;
+  right: 10px;
+  height: 3px;
+  width: 15.4px;
+  border-radius: 3px;
+  background: #4B4841;
+  animation: awan 0.8s linear 0.9s infinite;
+}
+@keyframes sepeda {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleY(1.04);
+  }
+}
+@keyframes heli {
+  0%, 100% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes jalan {
+  0% {
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    transform: translate3d(-150px, 0, 0) scaleX(0.8);
+  }
+}
+@keyframes awan {
+  0% {
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+  100% {
+    transform: translate3d(-150px, 0, 0) scaleX(0.8);
+  }
 }/*# sourceMappingURL=style.css.map */
