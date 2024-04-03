@@ -75,3 +75,60 @@ window.setTimeout("waktu()", 1000);
             isiTanggal.innerHTML=""+Days[hari].substring(0,3)+", "+tanggal+" "+Months[bulan].substring(0,3)+" "+tahun;
             isiJam.innerHTML = jam+":"+menit;
         }
+
+    const dropzone = document.querySelector('.dropzone');
+    const filenameDisplay = document.querySelector('.filename');
+    const input = document.querySelector('.input');
+    const uploadBtn = document.querySelector('.upload-btn');
+    const syncing = document.querySelector('.syncing');
+    const done = document.querySelector('.done');
+    const upload = document.querySelector('.upload');
+    const line = document.querySelector('.line');
+
+    dropzone.addEventListener("dragover", (e) => {
+        dropzone.classList.add("dragover");
+    });
+    
+    dropzone.addEventListener("dragleave", () => {
+      dropzone.classList.remove("dragover");
+    });
+    
+    dropzone.addEventListener("drop", (e) => {
+      dropzone.classList.remove("dragover");
+    });
+    
+    dropzone.addEventListener("dragenter", (e) => {
+      dropzone.classList.add("dragover");
+    });
+    
+    input.addEventListener('change', (event) => {
+      const files = event.target.files;
+      if (files.length > 0) {
+        const fileName = files[0].name;
+        document.querySelector('.filename').textContent = fileName;
+        upload.style.display = 'none';
+      }
+    });
+    
+    
+    uploadBtn.addEventListener('click', () => {
+      const files = document.querySelector('.input').files;
+      if (files.length > 0) {  
+        dropzone.style.transition = 'opacity 0.5s ease';
+        syncing.style.transition = 'opacity 0.5s ease';
+        filenameDisplay.style.opacity = '0';
+        syncing.style.opacity = '0.5';
+        line.classList.add('active');
+        uploadBtn.textContent = 'Uploading...';
+    
+        setTimeout(() => {
+                done.style.transition = 'opacity 1s ease';
+                syncing.style.transition = 'opacity 0.5s ease';
+                syncing.style.opacity = '0';
+                done.style.opacity = '1';
+                uploadBtn.textContent = 'Done!';
+                input.value = ''; 
+        }, 5000); 
+      }
+    });
+    

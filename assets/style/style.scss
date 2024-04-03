@@ -1781,3 +1781,399 @@
         }
     }
 }
+
+.card-15{
+    background: linear-gradient(45deg,#3A92AD ,#5B9F5C );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-upload{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #d6d6d6;
+        // background: transparent;
+        position: relative;
+        height: 70%;
+        width: 80%;
+        border-radius: 12px;
+        .title{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #232323;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .line{
+            position: relative;
+            top:0;
+            left: 0;
+            height: 5px;
+            background-color: #9cff83;
+            scale: 0 1;
+            width: 100%;
+            transform-origin: left;
+            // animation: progressFill 2s linear infinite;
+        }
+
+        .line.active{
+            animation: progressFill 5s ease-out forwards;
+        }
+
+        @keyframes progressFill {
+          to{
+            scale:1 1;
+          }
+        }
+        .dropzone{
+            position: absolute;
+            
+            width: 100px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: visible;
+            border: 1px dashed #232323;
+        }
+        .dropzone.dragover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .upload{
+            position: absolute;
+            width: 100px;
+            opacity: 0.3;
+        }
+
+        .input {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+          }
+        .filename {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .syncing{
+            opacity: 0;
+            position: absolute;
+            top: calc(50% - 25px);
+            left: calc(50% - 25px);
+            width: 50px;
+            height: 50px;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+
+          .done {
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+          }
+
+          .upload-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            background-color: #6ECE3B;
+            color: #fff;
+            // padding: 10px;
+            width: 140px;
+            height: 50px;
+            border-radius: 12px;
+            cursor: pointer;
+          }
+
+          .upload-btn:hover{
+            filter: brightness(0.5);
+            
+          }
+
+          .input {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            z-index: 999;
+          }
+
+          svg {
+            pointer-events: none
+          }
+    }
+
+}
+
+.card-16{
+    background-color: #46A6DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .lingkaran{
+        position: absolute;
+        background-color: #FFFFFF;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        animation: lingkaran 5s ease-in-out infinite;
+        // opacity: 1;
+        &:before{
+			content:"";
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			background:transparent;
+			border-radius:100%;
+			border:3px solid #fff;
+            // z-index: 100;
+			animation:circle-before 5s ease-in-out infinite
+		}
+        
+    }
+
+    .segilima{
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        position: absolute;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        transform:rotate(22.5deg) scale(0);
+		animation: octa 5s ease-in-out infinite;
+  
+    }
+
+    .lima-bars{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        // background-color: yellow;
+        @for $i from 1 through 4 {
+            .bar#{$i} {
+                position: absolute;
+                width: 4px;
+                height: 100%; 
+                left: 50%;
+                top: 0%;
+                transform:  rotate(45deg * $i);
+                animation: octa-bar 5s ease-in-out infinite;
+                &:after,
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 4px;
+                    height: 25px;
+                    background: #fff;
+                    border-radius: 2px;
+                }
+                &:before {
+                    bottom: 0;
+                }
+                
+    }
+}
+}
+
+    .segitiga{
+        width: 106px;
+        height: 90px;
+		background-color: #fff;
+        position: absolute;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        animation: triangle 5s ease-in-out infinite;
+    } 
+
+    .tiga-bars {
+        position: absolute;
+		
+		width: 200px;
+		height: 200px;
+        
+		@for $i from 1 through 4{
+			.bar#{$i}{
+				position:absolute;
+				top: 50%;
+				left: 50%;
+				width: 4px;
+				height: 120%;
+				animation: triangle-bar 5s ease-in-out infinite;
+				&:after{
+					position: absolute;
+					content: '';
+					width: 4px;
+					height: 25px;
+					background: #fff;
+					border-radius: 2px;
+				}
+			}
+		}
+		.bar1{
+			height: 100%;
+			transform: translate(-50%, -50%);
+		}
+		.bar2{
+			transform: translate(-50%, -50%) rotate(130deg);
+		}
+		.bar3{
+			transform: translate(-50%, -50%) rotate(231deg);
+		}
+    }
+
+    @keyframes lingkaran {
+        0% {
+            transform: translate(0, -300px) scaleY(1.2);
+        }
+        10% {
+            transform: translate(0, 0) scaleY(0.8);
+        }
+        14% {
+            transform: translate(0, 0) scaleY(1.1);
+        }
+        18% {
+            transform: translate(0, 0) scaleY(0.9);
+        }
+        20%,
+        22% {
+            transform: translate(0, 0) scaleY(1);
+        }
+        26% {
+            transform: translate(0, 0) scale(1.2);
+        }
+        32%,
+        74% {
+            transform: translate(0, 0) scale(0);
+        }
+        80% {
+            transform: translate(0, 0) scale(1.2);
+        }
+    
+        84% {
+            transform: translate(0, 0) scale(0.9);
+        }
+        86%,
+        88% {
+            transform: translate(0, 0) scale(1);
+        }
+        92% {
+            transform: translate(0, 0) scaleY(0.9);
+        }
+        100% {
+            transform: translate(0, 350px) scaleY(1.2);
+        }
+    }
+
+    @keyframes circle-before{
+        0%, 74% {
+            width: 0;
+        height:0;
+        opacity: 0;
+        }
+        80% {
+                opacity: 1;
+        }
+        84%, 100% {
+                width: 150%;
+                height:150%;
+                opacity: 0;
+        }
+    }
+    
+    @keyframes triangle{
+		0%, 52% {
+			transform: translate(0,0) scale(0);
+        }
+        58% {
+                transform: translate(0,0) scale(1.2);
+        }
+        62% {
+                transform: translate(0,0) scale(0.9);
+        }
+        64%, 66% {
+                transform: translate(0,0) scale(1);
+        }
+        70% {
+                transform: translate(0,0) scale(1.2);
+        }
+        76%, 100% {
+                transform: translate(0,0) scale(0);
+        }
+    }
+
+    @keyframes triangle-bar {
+        0%, 52% {
+                height:0;
+                opacity: 0;
+        }
+        58% {
+                opacity: 1;
+        }
+        62%, 100% {
+                height:100%;
+                opacity: 0;
+        }
+    }
+
+    @keyframes octa{
+        0%, 30% {
+                transform:translate(0,0) rotate(22.5deg) scale(0);
+        }
+        36% {
+                transform: translate(0,0) rotate(22.5deg) scale(1.2);
+        }
+        40% {
+                transform: translate(0,0) rotate(22.5deg) scale(0.9);
+        }
+        42%, 44% {
+                transform: translate(0,0) rotate(22.5deg) scale(1);
+        }
+        48% {
+                transform: translate(0,0) rotate(22.5deg) scale(1.2);
+        }
+        54%, 100% {
+                transform: translate(0,0) rotate(22.5deg) scale(0);
+        }
+    }
+    
+    @keyframes octa-bar {
+        0%, 30% {
+                height:0;
+                opacity: 0;
+        }
+        36% {
+                opacity: 1;
+        }
+        40%, 100% {
+                height:100%;
+                opacity: 0;
+        }
+    }
+    
+}
+
+
