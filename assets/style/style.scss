@@ -2203,6 +2203,8 @@
         width: 250px;
         height: 250px;
         background: #242424;
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2248,6 +2250,107 @@
             }
         }
        }
+}
+
+.card-18{
+    position: relative;
+    .atas{
+        position: absolute;
+        background: #e63946;
+        top: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .bawah{
+        position: absolute;
+        background: #a8dadc;
+        top: 50%;
+        width: 100%;
+        height: 50%;
+    }
+    .lingkaran{
+        transform-style: preserve-3d;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        // background-color: yellow;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        transform: rotateX(90deg);
+        animation: rotasi 5s ease-in-out infinite;
+
+        .merah{
+            position: absolute;
+            background: #e63946;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            backface-visibility: hidden;
+            transform: rotateX(0deg);
+            z-index: 2;
+        }
+        .putih{
+            position: absolute;
+            background: #a8dadc;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            backface-visibility: hidden;
+            transform: rotateX(180deg);
+            z-index: 1;
+        }
+    }
+
+    @keyframes rotasi {
+        0%,
+        50%,
+        100% {
+          transform: rotateX(90deg);
+        }
+        15% {
+          transform: rotateX(150deg);
+        }
+        20% {
+          transform: rotateX(50deg);
+        }
+        25% {
+          transform: rotateX(120deg);
+        }
+        30% {
+          transform: rotateX(70deg);
+        }
+        35% {
+          transform: rotateX(100deg);
+        }
+        40% {
+          transform: rotateX(80deg);
+        }
+        45% {
+          transform: rotateX(90deg);
+        }
+        65% {
+          transform: rotateX(30deg);
+        }
+        70% {
+          transform: rotateX(130deg);
+        }
+        75% {
+          transform: rotateX(60deg);
+        }
+        80% {
+          transform: rotateX(110deg);
+        }
+        85% {
+          transform: rotateX(80deg);
+        }
+        90% {
+          transform: rotateX(100deg);
+        }
+        95% {
+          transform: rotateX(90deg);
+        }
+      }
 }
 
 
