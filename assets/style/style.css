@@ -771,7 +771,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(163deg);
+  transform: rotate(198deg);
 }
 .card-8 .buuble-1:after {
   position: absolute;
@@ -791,7 +791,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(205deg);
+  transform: rotate(126deg);
 }
 .card-8 .buuble-2:after {
   position: absolute;
@@ -811,7 +811,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(291deg);
+  transform: rotate(58deg);
 }
 .card-8 .buuble-3:after {
   position: absolute;
@@ -831,7 +831,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(65deg);
+  transform: rotate(56deg);
 }
 .card-8 .buuble-4:after {
   position: absolute;
@@ -851,7 +851,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(213deg);
+  transform: rotate(199deg);
 }
 .card-8 .buuble-5:after {
   position: absolute;
@@ -871,7 +871,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(266deg);
+  transform: rotate(97deg);
 }
 .card-8 .buuble-6:after {
   position: absolute;
@@ -891,7 +891,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(251deg);
+  transform: rotate(185deg);
 }
 .card-8 .buuble-7:after {
   position: absolute;
@@ -911,7 +911,7 @@
   left: 180px;
   width: 50px;
   height: 50px;
-  transform: rotate(232deg);
+  transform: rotate(285deg);
 }
 .card-8 .buuble-8:after {
   position: absolute;
@@ -929,7 +929,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(124deg);
+  transform: rotate(71deg);
 }
 .card-8 .sparkle-1:after {
   position: absolute;
@@ -947,7 +947,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(244deg);
+  transform: rotate(252deg);
 }
 .card-8 .sparkle-2:after {
   position: absolute;
@@ -965,7 +965,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(203deg);
+  transform: rotate(143deg);
 }
 .card-8 .sparkle-3:after {
   position: absolute;
@@ -983,7 +983,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(95deg);
+  transform: rotate(31deg);
 }
 .card-8 .sparkle-4:after {
   position: absolute;
@@ -1001,7 +1001,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(99deg);
+  transform: rotate(229deg);
 }
 .card-8 .sparkle-5:after {
   position: absolute;
@@ -1019,7 +1019,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(122deg);
+  transform: rotate(174deg);
 }
 .card-8 .sparkle-6:after {
   position: absolute;
@@ -1037,7 +1037,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(157deg);
+  transform: rotate(177deg);
 }
 .card-8 .sparkle-7:after {
   position: absolute;
@@ -1055,7 +1055,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(275deg);
+  transform: rotate(177deg);
 }
 .card-8 .sparkle-8:after {
   position: absolute;
@@ -1073,7 +1073,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(60deg);
+  transform: rotate(223deg);
 }
 .card-8 .sparkle-9:after {
   position: absolute;
@@ -1091,7 +1091,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
-  transform: rotate(80deg);
+  transform: rotate(157deg);
 }
 .card-8 .sparkle-10:after {
   position: absolute;
@@ -1669,7 +1669,7 @@
   width: 3px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 0.9s linear 0.8s infinite;
+  animation: jalan 1s linear 1s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-2 {
   position: absolute;
@@ -1679,7 +1679,7 @@
   width: 4px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 0.9s linear 0.9s infinite;
+  animation: jalan 1s linear 0.9s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-3 {
   position: absolute;
@@ -1689,7 +1689,7 @@
   width: 5px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 1s linear 0.4s infinite;
+  animation: jalan 0.9s linear 0.7s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-4 {
   position: absolute;
@@ -1699,7 +1699,7 @@
   width: 6px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 1s linear 0.4s infinite;
+  animation: jalan 0.9s linear 0.2s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-5 {
   position: absolute;
@@ -1709,7 +1709,7 @@
   width: 7px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 1s linear 0.2s infinite;
+  animation: jalan 0.9s linear 0.6s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-6 {
   position: absolute;
@@ -1719,7 +1719,7 @@
   width: 8px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 0.9s linear 0.1s infinite;
+  animation: jalan 0.9s linear 0.4s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-7 {
   position: absolute;
@@ -1729,7 +1729,7 @@
   width: 9px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 0.9s linear 0.8s infinite;
+  animation: jalan 0.9s linear 0.2s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-8 {
   position: absolute;
@@ -1739,7 +1739,7 @@
   width: 10px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 0.9s linear 0.6s infinite;
+  animation: jalan 0.9s linear 0.1s infinite;
 }
 .card-14 .kartu .flip .front .jalan .garis-9 {
   position: absolute;
@@ -1749,7 +1749,7 @@
   width: 11px;
   background: #4B4841;
   border-radius: 3px;
-  animation: jalan 0.9s linear 0.7s infinite;
+  animation: jalan 1s linear 0.1s infinite;
 }
 .card-14 .kartu .flip .back {
   transform: rotateX(180deg);
@@ -1773,50 +1773,50 @@
   top: 34px;
   right: 10px;
   height: 3px;
-  width: 21.9px;
+  width: 17.3px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.8s linear 0.6s infinite;
+  animation: awan 0.7s linear 0.3s infinite;
 }
 .card-14 .kartu .flip .back .awan .awan-2 {
   position: absolute;
   top: 48px;
   right: 10px;
   height: 3px;
-  width: 16.5px;
+  width: 21.5px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.7s linear 0.1s infinite;
+  animation: awan 0.8s linear 0.7s infinite;
 }
 .card-14 .kartu .flip .back .awan .awan-3 {
   position: absolute;
   top: 62px;
   right: 10px;
   height: 3px;
-  width: 15.7px;
+  width: 24.3px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.8s linear 0.7s infinite;
+  animation: awan 0.8s linear 0.5s infinite;
 }
 .card-14 .kartu .flip .back .awan .awan-4 {
   position: absolute;
   top: 76px;
   right: 10px;
   height: 3px;
-  width: 12.2px;
+  width: 14.7px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.7s linear 0.4s infinite;
+  animation: awan 0.7s linear 0.6s infinite;
 }
 .card-14 .kartu .flip .back .awan .awan-5 {
   position: absolute;
   top: 90px;
   right: 10px;
   height: 3px;
-  width: 17.7px;
+  width: 13.2px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.8s linear 0.5s infinite;
+  animation: awan 0.7s linear 0.9s infinite;
 }
 .card-14 .kartu .flip .back .awan .awan-6 {
   position: absolute;
@@ -1826,27 +1826,27 @@
   width: 23.7px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.8s linear 1s infinite;
+  animation: awan 0.8s linear 0.7s infinite;
 }
 .card-14 .kartu .flip .back .awan .awan-7 {
   position: absolute;
   top: 118px;
   right: 10px;
   height: 3px;
-  width: 24.6px;
+  width: 22.5px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.7s linear 0.5s infinite;
+  animation: awan 0.8s linear 0.1s infinite;
 }
 .card-14 .kartu .flip .back .awan .awan-8 {
   position: absolute;
   top: 132px;
   right: 10px;
   height: 3px;
-  width: 19.6px;
+  width: 22.8px;
   border-radius: 3px;
   background: #4B4841;
-  animation: awan 0.8s linear 0.6s infinite;
+  animation: awan 0.8s linear 0.8s infinite;
 }
 @keyframes sepeda {
   0%, 100% {
@@ -2705,4 +2705,100 @@
   95% {
     transform: rotateX(90deg);
   }
+}
+
+.card-19 {
+  position: relative;
+  overflow: hidden;
+}
+.card-19 .control {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 5;
+}
+.card-19 .control .lingkaran {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-19 .control .lingkaran .isi-19 {
+  position: absolute;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  transition: all 0.5s ease-in;
+  z-index: 110;
+}
+.card-19 .control .lingkaran .isi-19.pindah-1 {
+  transform: translateX(0%);
+}
+.card-19 .control .lingkaran .isi-19.pindah-2 {
+  transform: translateX(137%);
+}
+.card-19 .control .lingkaran .isi-19.pindah-3 {
+  transform: translateX(275%);
+}
+.card-19 .background {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+.card-19 .background .back-1 {
+  position: absolute;
+  background: purple;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  transform: translateX(0);
+}
+.card-19 .background .back-1.geser-1 {
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+.card-19 .background .back-2 {
+  position: absolute;
+  background: green;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+.card-19 .background .back-2.geser-2 {
+  transform: translateX(0%);
+  transition: all 0.5s;
+}
+.card-19 .background .back-2.geser-3 {
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+.card-19 .background .back-3 {
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transform: translateX(200%);
+}
+.card-19 .background .back-3.geser-4 {
+  transform: translateX(0%);
+  transition: all 0.5s;
+}
+.card-19 .background .back-3.geser-5 {
+  transform: translateX(100%);
+  transition: all 0.5s;
 }/*# sourceMappingURL=style.css.map */

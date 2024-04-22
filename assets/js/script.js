@@ -131,4 +131,52 @@ window.setTimeout("waktu()", 1000);
         }, 5000); 
       }
     });
-    
+
+    const satu = document.querySelector('.lingkaran-1');
+    const dua = document.querySelector('.lingkaran-2');
+    const tiga = document.querySelector('.lingkaran-3');
+   const jangan = document.querySelector('.isi-19');
+   const back1 = document.querySelector('.back-1');
+   const back2 = document.querySelector('.back-2');
+   const back3 = document.querySelector('.back-3');
+
+    satu.addEventListener('click', function () {
+      
+      jangan.classList.add('pindah-1');
+      jangan.classList.remove('pindah-2');
+      jangan.classList.remove('pindah-3');
+
+      back2.classList.remove('geser-2')
+      back1.classList.remove('geser-1')
+      back2.classList.remove('geser-3')
+      back3.classList.remove('geser-4')
+      back3.classList.remove('geser-5')
+      // dua.classList.toggle('active');
+  })
+    dua.addEventListener('click', function () {
+      
+      jangan.classList.remove('pindah-1');
+      jangan.classList.add('pindah-2');
+      jangan.classList.remove('pindah-3');
+
+
+      back1.classList.add('geser-1')
+      back2.classList.add('geser-2')
+      back2.classList.remove('geser-3')
+      back3.classList.remove('geser-4')
+      back3.classList.add('geser-5')
+
+      // dua.classList.toggle('active');
+  })
+    tiga.addEventListener('click', function () {
+      
+      jangan.classList.remove('pindah-1');
+      jangan.classList.remove('pindah-2');
+      jangan.classList.add('pindah-3');
+      back3.classList.add('geser-4');
+      back3.classList.remove('geser-5');
+      back2.classList.remove('geser-2');
+      back2.classList.add('geser-3');
+
+      // dua.classList.toggle('active');
+  })
